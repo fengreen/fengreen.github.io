@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[多线程]]></title>
-    <url>%2F%E5%A4%9A%E7%BA%BF%E7%A8%8B.html</url>
-    <content type="text"><![CDATA[你没有感觉奇怪嘛？我正在测试呢！！!!]]></content>
+    <title><![CDATA[java基础]]></title>
+    <url>%2Fjava%E5%9F%BA%E7%A1%80.html</url>
+    <content type="text"><![CDATA[#java基础 《java基础一》《java基础二》《java基础三》《java基础四》 java 下载 Java 是由Sun Microsystems公司于1995年5月推出的高级程序设计语言。Java可运行于多个平台，如Windows, Mac OS，及其他多种UNIX版本的系统。本教程通过简单的实例将让大家更好的了解JAVA编程语言。 [TOC] ####java的好处1）java是纯面向对象编程的语言；2）平台无关性 （一次编译，到处运行；Write Once，Run Anywhere）；3）java提供了许多内置的类库，通过这些类库，简化了开发人员的设计工作，同时缩短了项目开发时间；4）提供了对Web应用开发的支持，例如，Applet，Servlet，和JSP可以用来开发Web应用程序，，Socket，RMI可以用来开发分布式应用程序的类库；5）去除了c++中难以理解，容易混淆的特性（如c++中的多继承，头文件，指针，结构，单元，运算符重载，虚拟基础类，使得程序更加严谨，整洁；6）具有较好的安全性和健壮性。java语言经常会被用在网络环境中，为了增强程序的安全性 122 3 2132123213213213213232323213213232321321321323232323232321321321323231232121 2121321321321312321321321321321321321321321321221 2132121222232123 2232321321]]></content>
       <tags>
         <tag>java</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[java基础]]></title>
-    <url>%2Fjava%E5%9F%BA%E7%A1%80.html</url>
-    <content type="text"><![CDATA[#java基础 《java基础一》《java基础二》《java基础三》《java基础四》 java 下载 Java 是由Sun Microsystems公司于1995年5月推出的高级程序设计语言。Java可运行于多个平台，如Windows, Mac OS，及其他多种UNIX版本的系统。本教程通过简单的实例将让大家更好的了解JAVA编程语言。 [TOC] ####java的好处1）java是纯面向对象编程的语言；2）平台无关性 （一次编译，到处运行；Write Once，Run Anywhere）；3）java提供了许多内置的类库，通过这些类库，简化了开发人员的设计工作，同时缩短了项目开发时间；4）提供了对Web应用开发的支持，例如，Applet，Servlet，和JSP可以用来开发Web应用程序，，Socket，RMI可以用来开发分布式应用程序的类库；5）去除了c++中难以理解，容易混淆的特性（如c++中的多继承，头文件，指针，结构，单元，运算符重载，虚拟基础类，使得程序更加严谨，整洁；6）具有较好的安全性和健壮性。java语言经常会被用在网络环境中，为了增强程序的安全性 122 3 2132123213213213213232323213213232321321321323232323232321321321323231232121 2121321321321312321321321321321321321321321321221 2132121222232123 2232321321]]></content>
+    <title><![CDATA[多线程]]></title>
+    <url>%2F%E5%A4%9A%E7%BA%BF%E7%A8%8B.html</url>
+    <content type="text"><![CDATA[你没有感觉奇怪嘛？我正在测试呢！！!!]]></content>
       <tags>
         <tag>java</tag>
       </tags>
