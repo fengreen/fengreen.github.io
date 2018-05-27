@@ -281,7 +281,7 @@ NexT.utils = NexT.$u = {
     var sidebarNavHeight = ($('.sidebar-nav').css('display') == 'block') ? $('.sidebar-nav').outerHeight(true) : 0,
         sidebarInner = $('.sidebar-inner'),
         sidebarPadding = sidebarInner.innerWidth() - sidebarInner.width(),
-        sidebarSchemePadding = this.isPisces() || this.isGemini() ?
+        sidebarSchemePadding = this.isPisces() || this.isGemini()?
           ((sidebarPadding * 2) + sidebarNavHeight + (CONFIG.sidebar.offset * 2) + this.getSidebarb2tHeight()) :
           ((sidebarPadding * 2) + (sidebarNavHeight / 2));
     return sidebarSchemePadding;

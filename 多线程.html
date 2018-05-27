@@ -107,7 +107,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":true,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -178,36 +178,21 @@
 	
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+<!--  <div class="site-meta ">
     
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">奋青园</span>
-        <span class="logo-line-after"><i></i></span>
-    </a>
-	  
-  <div class="custom-logos">
-  简单几招，让 
-  <div id=flip>
-    <div><div>工作更轻松！</div></div>
-    <div><div>生活更美好！</div></div>
-    <div><div>心情更舒畅！</div></div>
-  </div>
-  一起来吧！
- </div>
-	  
-</div>
-
-
- 
 	
       
         <p class="site-subtitle"></p>
       
   </div>
+-->
 
+
+        <p class="site-subtitle"></p>
+
+
+ <!--
+    头部隐藏按钮
   <div class="site-nav-toggle">
     <button>
       <span class="btn-bar"></span>
@@ -215,19 +200,20 @@
       <span class="btn-bar"></span>
     </button>
   </div>
+-->
+  
 </div>
-
+<div class="nav">
 <nav class="site-nav">
   
 
   
     <ul id="menu" class="menu">
+	  <li class="logo-title"><img class="logo-pic" src="../images/logo-3.png"></></li>
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -237,8 +223,6 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
             关于
           </a>
         </li>
@@ -246,8 +230,6 @@
         
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
           </a>
@@ -257,8 +239,6 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
             分类
           </a>
         </li>
@@ -266,8 +246,6 @@
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -279,8 +257,6 @@
           
             <a href="javascript:;" class="popup-trigger">
           
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
             搜索
           </a>
@@ -314,7 +290,7 @@
     </div>
   
 </nav>
-
+</div>
 <!--阅读条 -->
 <div class="top-scroll-bar"></div>
 
@@ -486,14 +462,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/java基础.html" rel="next" title="java基础">
+                <i class="fa fa-chevron-left"></i> java基础
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/java基础.html" rel="prev" title="java基础">
-                java基础 <i class="fa fa-chevron-right"></i>
+              <a href="/你好.html" rel="prev" title="你好">
+                你好 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -566,12 +546,21 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
             
 
             
@@ -603,12 +592,14 @@
       </section>
 
       
-
+       
+	   <div class="log">
+	        
+	   </div>
+	   
       
         <div class="back-to-top">
           <i class="fa fa-arrow-up"></i>
-          
-            <span id="scrollpercent"><span>0</span>%</span>
           
         </div>
       
@@ -751,6 +742,8 @@
 
   
   
+
+
 
 
   <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
