@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo系列(一)之建站]]></title>
+    <url>%2Fhexo-website.html</url>
+    <content type="text"><![CDATA[本文教你从零基础搭建hexo博客，能在本地可以访问 我可以设置这一句的颜色哈哈 首页]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[你好]]></title>
     <url>%2F%E4%BD%A0%E5%A5%BD.html</url>
     <content type="text"><![CDATA[你好 代码： 1234public static viod main()&#123; int str=0; system.out.println("Hello World!");&#125; 在你想要的时候 第三方 本文是根据张三的的啥的范德萨范德萨发士大夫第三方的撒符索多番，似懂非懂是防守打法第三方撒打发斯蒂芬士大夫士大夫士大夫的说法 [TOC] 有点慌着是撒打发多 java]]></content>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[多线程]]></title>
+    <url>%2F%E5%A4%9A%E7%BA%BF%E7%A8%8B.html</url>
+    <content type="text"><![CDATA[你没有感觉奇怪嘛？我正在测试呢！！!!]]></content>
       <tags>
         <tag>java</tag>
       </tags>
@@ -15,14 +34,6 @@
       <categories>
         <category>java</category>
       </categories>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[多线程]]></title>
-    <url>%2F%E5%A4%9A%E7%BA%BF%E7%A8%8B.html</url>
-    <content type="text"><![CDATA[你没有感觉奇怪嘛？我正在测试呢！！!!]]></content>
       <tags>
         <tag>java</tag>
       </tags>

@@ -1912,7 +1912,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9c183d;
+  background: #c9ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2689,8 +2689,6 @@ pre .javascript .function {
   margin-top: -10px;
   height: 150px;
   width: 100%;
-  left: 0;
-  top: -10;
   background: #f5f5f5;
   height: 70px;
 }
@@ -2701,7 +2699,8 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .header {
-    width: auto 0;
+    margin-bottom: 80px;
+    overflow-x: auto;
   }
 }
 .header-inner {
@@ -2714,29 +2713,9 @@ pre .javascript .function {
 .main-inner {
   margin-top: -60px;
 }
-.popup search-popup local-search-popup {
-  z-index: 3;
-}
-.logo-title {
-  list-type: none;
-  padding-right: 120px;
-}
-@media (max-width: 767px) {
-  .logo-title {
-    display: none;
-  }
-}
-.logo-pic {
-  margin-top: -6px;
-}
 .site-nav {
   padding-left: auto;
   padding-right: auto;
-}
-@media (max-width: 767px) {
-  .site-nav {
-    overflow-x: auto;
-  }
 }
 .site-nav ul {
   width: 100%;
@@ -2751,7 +2730,8 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .site-nav ul {
     width: auto 0;
-    overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
   }
 }
 .site-nav ul li {
@@ -2760,6 +2740,7 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .site-nav ul li {
     width: 80px;
+    display: inline-block;
   }
 }
 .logo-title {
@@ -3226,82 +3207,6 @@ h2 {
   display: none;
   background: #37c6c0;
 }
-.post-body p a {
-  color: #0593d3;
-  border-bottom: none;
-  border-bottom: 1px solid #0593d3;
-}
-.post-body p a:hover {
-  color: #fc6423;
-  border-bottom: none;
-  border-bottom: 1px solid #fc6423;
-}
-span#inline-yellow {
-  display: inline;
-  padding: 0.2em 0.6em 0.3em;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0;
-  background-color: #f0ad4e;
-}
-span#inline-green {
-  display: inline;
-  padding: 0.2em 0.6em 0.3em;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0;
-  background-color: #5cb85c;
-}
-span#inline-blue {
-  display: inline;
-  padding: 0.2em 0.6em 0.3em;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0;
-  background-color: #2780e3;
-}
-span#inline-purple {
-  display: inline;
-  padding: 0.2em 0.6em 0.3em;
-  font-size: 80%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0;
-  background-color: #9954bb;
-}
-a#download {
-  display: inline-block;
-  padding: 0 10px;
-  color: #000;
-  background: transparent;
-  border: 2px solid #000;
-  border-radius: 2px;
-  transition: all 0.5s ease;
-  font-weight: bold;
-}
-a#download:hover {
-  background: #000;
-  color: #fff;
-}
 .headband {
   height: 0px;
   background-image: linear-gradient(90deg, #f79533 0%, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
@@ -3319,23 +3224,6 @@ a#download:hover {
   padding: 25px 36px 36px 36px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   background-color: #fff;
-}
-.posts-expand .post-title {
-  font-size: 26px;
-  font-weight: 700;
-}
-.posts-expand .post-title-link::before {
-  background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
-}
-.posts-expand .post-meta {
-  margin: 10px 0px 20px 0px;
-}
-.posts-expand .post-meta .post-description {
-  font-style: italic;
-  font-size: 14px;
-  margin-top: 30px;
-  margin-bottom: 0px;
-  color: #666;
 }
 .menu {
   text-align: center;
@@ -3675,10 +3563,6 @@ h2.about-title {
 .local-search-popup .popup-btn-close {
   border-left: none;
 }
-::selection {
-  background-color: #fff159;
-  color: #555;
-}
 img#github-emoji {
   margin: 0px;
   padding: 0px;
@@ -3729,6 +3613,10 @@ a.fancybox {
 }
 .btn:hover {
   color: #222 !important;
+}
+::selection {
+  background-color: #fff159;
+  color: #555;
 }
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;
@@ -3875,6 +3763,118 @@ code.description {
 .posts-expand {
   padding-top: 0px;
 }
+.posts-expand .post-title-link {
+  display: inline-block;
+  position: relative;
+  color: #5cb85c;
+  border-bottom: none;
+  line-height: 1.2;
+  vertical-align: top;
+}
+.posts-expand .post-title-link::before {
+  background-color: #5cb85c;
+}
+.post-body p {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: #222;
+}
+.menu-item-active a:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 15px;
+  width: 0px;
+  height: 0px;
+}
+.site-nav ul {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .site-nav ul {
+    width: auto 0;
+  }
+}
+@media (max-width: 767px) {
+  .site-nav ul {
+    width: 1000px;
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
+.logo-title {
+  list-type: none;
+  padding-right: 120px;
+}
+@media (max-width: 767px) {
+  .logo-title {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .menu-item menu-item-home menu-item-active {
+    margin-left: -30px;
+  }
+}
+.logo-pic {
+  margin-top: -6px;
+}
+.posts-expand .post-meta {
+  margin: 3px 0 60px 0;
+  color: #222;
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+.posts-expand .post-meta a {
+  color: #5cb85c;
+  font-weight: 500;
+}
+.posts-expand .post-meta a {
+  color: #5cb85c;
+  font-weight: 500;
+}
+.page-archive .archive-page-counter {
+  color: #5cb85c;
+}
+.posts-collapse .collection-title h1,
+.posts-collapse .collection-title h2 {
+  color: rgba(7,179,155,0.341);
+}
+.posts-collapse .post-title {
+  border-bottom: 0px;
+}
+.posts-collapse .post-meta {
+  position: absolute;
+  font-size: 12px;
+  left: 20px;
+  top: 5px;
+  color: #222;
+}
+.posts-collapse .post-title a {
+  color: rgba(243,112,85,0.659);
+}
+.category-all-page .category-all-title {
+  color: rgba(7,179,155,0.839);
+}
+.category-all .category-list {
+  list-style: disc;
+}
+.menu .menu-item a {
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  text-align: left;
+  line-height: inherit;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  color: #07b39b;
+}
 @-moz-keyframes heartAnimate {
   0%, 100% {
     -webkit-transform: scale(1);
@@ -3994,4 +3994,98 @@ code.description {
     -o-transform: scale(1.1);
     transform: scale(1.1);
   }
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
+}
+.post-title {
+  color: #00dc30;
+  font-weight: 400;
+}
+.title1 {
+  color: #00dc30;
+  font-size: large;
+}
+.posts-expand .post-meta {
+  margin: 10px 0px 20px 0px;
+}
+.posts-expand .post-meta .post-description {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  color: #666;
+}
+span#inline-yellow {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0;
+  background-color: #f0ad4e;
+}
+span#inline-green {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0;
+  background-color: #5cb85c;
+}
+span#inline-blue {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0;
+  background-color: #2780e3;
+}
+span#inline-purple {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 80%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0;
+  background-color: #9954bb;
+}
+a#download {
+  display: inline-block;
+  padding: 0 10px;
+  color: #000;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+  font-weight: bold;
+}
+a#download:hover {
+  background: #000;
+  color: #fff;
 }
