@@ -1912,7 +1912,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c9ffff;
+  background: #ff25ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -4088,4 +4088,15 @@ a#download {
 a#download:hover {
   background: #000;
   color: #fff;
+}
+pre#order {
+  height: 30px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+code#orderfont {
+  font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
+  font-size: 18px;
+  padding-top: 10px;
 }
