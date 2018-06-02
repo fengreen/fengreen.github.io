@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[hexo系列(一)之搭建本地博客]]></title>
     <url>%2Fhexo-website.html</url>
-    <content type="text"><![CDATA[本文教你从零基础搭建hexo博客，能在本地可以访问 我可以设置这一句的颜色哈哈 首页 he is good boy,she is good grid /helloWorld]]></content>
+    <content type="text"><![CDATA[本文教你从零基础搭建hexo博客，能在本地可以访问 什么是Hexo? Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 上面一句话是Hexo API文档上的原话。通过百度知道Hexo就是一款基于Node.js的静态博客框架，通过Node.js来生成静态的Web页面。 搭建环境1.搭建Node.js环境通过了解我们知道Hexo就是一款基于Node.js的静态博客框架,那么我们搭建博客必须要先下载Node.js,并进行安装。Node.js的安装步骤这里就不讲了(傻瓜式安装，一直下一步就可以了)。 安装完以后，我们需要测试一下Node.js到底安装成功了嘛？同时按Win键+R,打开运行窗口，输入cmd，点击确定，打开命令行窗体。输入以下命令: node -v npm -v 如果你输入命令后，出现以下你下载对应的版本号，恭喜你安装Node.js成功！ 2.安装Hexo 你可以先在电脑上创建一个文件夹，用于存放Hexo文件。比如我放在D:\Hexo文件夹下，并在命令窗口进入到该目录下。 输入npm install hexo-cli -g或者npm install -g hexo命令,很多人用的是前面一种，而我使用的是后面的一种，其实都差不多。(`–g`是全局安装，也可以不要) npm install hexo-cli -g 安装后你可以测试一下Hexo是否安装成功？可以在dos命令窗口中输入 hexo -v 命令 hexo -v 如果输入命令后，出现hexo对应的信息，恭喜你安装成功！ 安装Hexo成功后，需要初始化hexo,在命令行窗口输入 hexo init 命令,然后再输入 npm install 命令,`npm`自动安装组件 hexo init npm install 安装hexo server (hexo版本在3.0之前的可以省略),基本现在下Hexo的都是在3.0版本之后，刚刚搭建时上面操作完成之后，没有输入 npm install hexo-server –save 命令，之后输入hexo命令就使用不了。 npm install hexo-server –save 注意：因Hexo 3.0以后把服务器独立成了单独的模块,所以还需要安装hexo-server才可以使用Hexo命令 ## 体验Hexo博客 首先介绍一下hexo最常用的3个命令: hexo clean ,清除hexo的静态资源文件 hexo g 或 hexo generate，生成静态资源文件 hexo s 或 hexo server ，运行hexo博客 hexo clean hexo g 或 hexo generate hexo s 或 hexo server]]></content>
       <categories>
         <category>hexo</category>
       </categories>
