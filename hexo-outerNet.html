@@ -94,10 +94,21 @@
 <meta property="og:site_name" content="奋青园">
 <meta property="og:description" content="上一篇Hexo系列(一)之搭建本地博客，介绍了怎么搭建本地博客，但博客光在本地观看可不行呀，你肯定会想放到外网上，通过网络可以访问，可以放到服务器上！对，没错！但是把其放到服务器上需要占很大的资源，成本也非常高。那怎么办呢？没事，已经有解决方案了，可以除花时间外，几乎是零成本。不需要服务器，也不需要考虑文件存储空间的问题。就是部署在托管平台上！">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-03T10:24:05.742Z">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-1.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-2.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-3.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-4.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-5.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-6.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-7.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-8.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-9.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-10.png">
+<meta property="og:updated_time" content="2018-06-03T11:50:30.143Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo系列(二)之部署外网博客">
 <meta name="twitter:description" content="上一篇Hexo系列(一)之搭建本地博客，介绍了怎么搭建本地博客，但博客光在本地观看可不行呀，你肯定会想放到外网上，通过网络可以访问，可以放到服务器上！对，没错！但是把其放到服务器上需要占很大的资源，成本也非常高。那怎么办呢？没事，已经有解决方案了，可以除花时间外，几乎是零成本。不需要服务器，也不需要考虑文件存储空间的问题。就是部署在托管平台上！">
+<meta name="twitter:image" content="http://www.wailian.work/images/2018/06/03/hexo2-1.png">
 
 
 
@@ -406,6 +417,21 @@
 
       
         <p>上一篇<a href="http://fengreen.cn/hexo-website.html">Hexo系列(一)之搭建本地博客</a>，介绍了怎么搭建本地博客，但博客光在本地观看可不行呀，你肯定会想放到外网上，通过网络可以访问，可以放到服务器上！对，没错！但是把其放到服务器上需要占很大的资源，成本也非常高。那怎么办呢？没事，已经有解决方案了，可以除花时间外，几乎是零成本。不需要服务器，也不需要考虑文件存储空间的问题。就是<strong>部署在托管平台</strong>上！<br><a id="more"></a>  </p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><blockquote>
+<p><strong>Git</strong>是目前世界上最流行的 <code>分布式版本控制系统</code> 。使用<strong>Git</strong>可以帮助我们把本地的网页和文章等内容提交到Gihub等托管平台上，<strong>实现同步</strong>。  </p>
+</blockquote>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载Git版本工具</a>,下载完之后需要安装，下面是安装步骤</p>
+<p>找到下载好git.ext文件，鼠标双击它<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-1.png" alt="hexo2-1.png" border="0" style="margin-left: 0px;"></p>
+<p>鼠标双击后后，会弹出下面的窗体，点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-2.png" alt="hexo2-2.png" border="0" style="margin-left: 0px;">  </p>
+<p>可以选择安装路径(点击 <code>Browse...</code> 按钮进行选择安装路径)，也可以选择默认路径，路径确定好了之后，点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-3.png" alt="hexo2-3.png" border="0" style="margin-left: 0px;"></p>
+<p>选择要安装的组件，需要安装就勾选即可（注意不要把默认要安装插件取消了哦）然后点击 <code>Next</code> 按钮，其中第一项是创建桌面快捷键<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-4.png" alt="hexo2-4.png" border="0" style="margin-left: 0px;"></p>
+<p>创建并修改开始菜单文件夹名称，勾选左下角的选项可以不创建,然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-5.png" alt="hexo2-5.png" border="0" style="margin-left: 0px;"></p>
+<p>设置默认的编辑器，默认是选择系统的默认编辑器，点击下拉框进行选择系统中可用的编辑器选项，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-6.png" alt="hexo2-6.png" border="0" style="margin-left: 0px;"></p>
+<p>选择是否增加相关path环境变量，第一项是仅在内部使用，第二项是可以在电脑如dos界面使用相关命令，第三项是以上两个都，建议第二项,我选择的是第一项 <code>Use Git from Git Bash only</code>，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-7.png" alt="hexo2-7.png" border="0" style="margin-left: 0px;"></p>
+<p>选择HTTPS的传输，默认选择第一项 <code>Use the openSSL library</code> 即可，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-8.png" alt="hexo2-8.png" border="0" style="margin-left: 0px;"></p>
+<p>选择配置行结束时转换的规则，我选择的是最后一项 <code>Checkout as-is,commit as-is</code> ，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-9.png" alt="hexo2-9.png" border="0" style="margin-left: 0px;"></p>
+<p>选择使用的终端，第一项是选择默认的终端，第二个是设置为控制台也就是DOS界面，选择第一项即可，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-10.png" alt="hexo2-10.png" border="0" style="margin-left: 0px;"></p>
+<p>后面的都是一直 <code>下一步(Next)</code> 、 <code>安装(Install)</code> 、 <code>完成(Finish)</code> 等操作，使用默认项就可以了。</p>
 <h2 id="部署到托管平台"><a href="#部署到托管平台" class="headerlink" title="部署到托管平台"></a>部署到托管平台</h2><p>  这里给大家介绍三个托管平台  </p>
 <table>
 <thead>
