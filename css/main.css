@@ -1912,7 +1912,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #743344;
+  background: #ffd1ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -4098,6 +4098,12 @@ pre#orderlo {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   border: 1px solid #ddd;
+  overflow: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 pre#ordermi {
   height: 30px;
