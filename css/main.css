@@ -1912,7 +1912,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a6e2ff;
+  background: #830fd1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -4128,6 +4128,8 @@ code#redlog {
   color: #c7254e;
   background-color: #f9f2f4;
   border-radius: 4px;
+  white-space: pre-wrap;
+  vertical-align: middle;
 }
 code#sentence {
   color: #c7254e;

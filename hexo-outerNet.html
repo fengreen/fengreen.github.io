@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="hexo,hexo系列,hexo教程" />
+  <meta name="keywords" content="hexo，hexo系列，hexo教程" />
 
 
 
@@ -87,7 +87,7 @@
 
 
 <meta name="description" content="上一篇Hexo系列(一)之搭建本地博客，介绍了怎么搭建本地博客，但博客光在本地观看可不行呀，你肯定会想放到外网上，通过网络可以访问，可以放到服务器上！对，没错！但是把其放到服务器上需要占很大的资源，成本也非常高。那怎么办呢？没事，已经有解决方案了，可以除花时间外，几乎是零成本。不需要服务器，也不需要考虑文件存储空间的问题。就是部署在托管平台上！">
-<meta name="keywords" content="hexo,hexo系列,hexo教程">
+<meta name="keywords" content="hexo，hexo系列，hexo教程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo系列(二)之部署外网博客">
 <meta property="og:url" content="http://fengreen.cn/hexo-outerNet.html">
@@ -106,7 +106,18 @@
 <meta property="og:image" content="http://www.wailian.work/images/2018/06/03/hexo2-10.png">
 <meta property="og:image" content="http://www.wailian.work/images/2018/06/04/hexo2-11.png">
 <meta property="og:image" content="http://www.wailian.work/images/2018/06/04/hexo2-12.png">
-<meta property="og:updated_time" content="2018-06-04T15:10:43.483Z">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-13.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-14.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-15.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-16.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-17.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-18.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-19.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-20.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-21.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-22.png">
+<meta property="og:image" content="http://www.wailian.work/images/2018/06/07/hexo2-23.png">
+<meta property="og:updated_time" content="2018-06-07T14:46:01.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo系列(二)之部署外网博客">
 <meta name="twitter:description" content="上一篇Hexo系列(一)之搭建本地博客，介绍了怎么搭建本地博客，但博客光在本地观看可不行呀，你肯定会想放到外网上，通过网络可以访问，可以放到服务器上！对，没错！但是把其放到服务器上需要占很大的资源，成本也非常高。那怎么办呢？没事，已经有解决方案了，可以除花时间外，几乎是零成本。不需要服务器，也不需要考虑文件存储空间的问题。就是部署在托管平台上！">
@@ -422,16 +433,16 @@
 <h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><blockquote>
 <p><strong>Git</strong>是目前世界上最流行的 <code>分布式版本控制系统</code> 。使用<strong>Git</strong>可以帮助我们把本地的网页和文章等内容提交到Gihub等托管平台上，<strong>实现同步</strong>。  </p>
 </blockquote>
-<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载Git版本工具</a>,下载完之后需要安装，下面是安装步骤</p>
-<p><strong>1.1</strong>找到下载好git.ext文件，鼠标双击它<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-1.png" alt="hexo2-1.png" border="0" style="margin-left: 0px;"></p>
+<p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载Git版本工具</a>，下载完之后需要安装，下面是安装步骤</p>
+<p><strong>1.1</strong>找到下载好git.exe文件，鼠标双击它<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-1.png" alt="hexo2-1.png" border="0" style="margin-left: 0px;"></p>
 <p><strong>1.2</strong>鼠标双击后后，会弹出下面的窗体，点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-2.png" alt="hexo2-2.png" border="0" style="margin-left: 0px;">  </p>
 <p><strong>1.3</strong>可以选择安装路径(点击 <code>Browse...</code> 按钮进行选择安装路径)，也可以选择默认路径，路径确定好了之后，点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-3.png" alt="hexo2-3.png" border="0" style="margin-left: 0px;"></p>
 <p><strong>1.4</strong>选择要安装的组件，需要安装就勾选即可（注意不要把默认要安装插件取消了哦）然后点击 <code>Next</code> 按钮，其中第一项是创建桌面快捷键<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-4.png" alt="hexo2-4.png" border="0" style="margin-left: 0px;"></p>
-<p><strong>1.5</strong>创建并修改开始菜单文件夹名称，勾选左下角的选项可以不创建,然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-5.png" alt="hexo2-5.png" border="0" style="margin-left: 0px;"></p>
+<p><strong>1.5</strong>创建并修改开始菜单文件夹名称，勾选左下角的选项可以不创建，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-5.png" alt="hexo2-5.png" border="0" style="margin-left: 0px;"></p>
 <p><strong>1.6</strong>设置默认的编辑器，默认是选择系统的默认编辑器，点击下拉框进行选择系统中可用的编辑器选项，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-6.png" alt="hexo2-6.png" border="0" style="margin-left: 0px;"></p>
-<p><strong>1.7</strong>选择是否增加相关path环境变量，第一项是仅在内部使用，第二项是可以在电脑如dos界面使用相关命令，第三项是以上两个都，建议第二项,我选择的是第一项 <code>Use Git from Git Bash only</code>，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-7.png" alt="hexo2-7.png" border="0" style="margin-left: 0px;"></p>
+<p><strong>1.7</strong>选择是否增加相关path环境变量，第一项是仅在内部使用，第二项是可以在电脑如dos界面使用相关命令，第三项是以上两个都，建议第二项，我选择的是第一项 <code>Use Git from Git Bash only</code>，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-7.png" alt="hexo2-7.png" border="0" style="margin-left: 0px;"></p>
 <p><strong>1.8</strong>选择HTTPS的传输，默认选择第一项 <code>Use the openSSL library</code> 即可，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-8.png" alt="hexo2-8.png" border="0" style="margin-left: 0px;"></p>
-<p><strong>1.9</strong>选择配置行结束时转换的规则，我选择的是最后一项 <code>Checkout as-is,commit as-is</code> ，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-9.png" alt="hexo2-9.png" border="0" style="margin-left: 0px;"></p>
+<p><strong>1.9</strong>选择配置行结束时转换的规则，我选择的是最后一项 <code>Checkout as-is，commit as-is</code> ，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-9.png" alt="hexo2-9.png" border="0" style="margin-left: 0px;"></p>
 <p><strong>1.10</strong>选择使用的终端，第一项是选择默认的终端，第二个是设置为控制台也就是DOS界面，选择第一项即可，然后点击 <code>Next</code> 按钮<br><img src="http://www.wailian.work/images/2018/06/03/hexo2-10.png" alt="hexo2-10.png" border="0" style="margin-left: 0px;"></p>
 <p>后面的都是一直 <code>下一步(Next)</code> 、 <code>安装(Install)</code> 、 <code>完成(Finish)</code> 等操作，使用默认项就可以了。</p>
 <h2 id="托管平台介绍及部署方式"><a href="#托管平台介绍及部署方式" class="headerlink" title="托管平台介绍及部署方式"></a>托管平台介绍及部署方式</h2><p><span id="stitle">2.1 托管平台介绍</span><br>  这里给大家介绍三个托管平台  </p>
@@ -454,14 +465,14 @@
 <td style="text-align:center">国内访问速度慢</td>
 </tr>
 <tr>
-<td style="text-align:center">oschina(码云)</td>
+<td style="text-align:center">Oschina(码云)</td>
 <td style="text-align:center">国内</td>
 <td style="text-align:center">快</td>
 <td style="text-align:center">不支持</td>
 <td style="text-align:center">不支持自定义域名</td>
 </tr>
 <tr>
-<td style="text-align:center">coding</td>
+<td style="text-align:center">Coding</td>
 <td style="text-align:center">国内</td>
 <td style="text-align:center">快</td>
 <td style="text-align:center">支持</td>
@@ -470,10 +481,16 @@
 </tbody>
 </table>
 <p>其实这个三个托管平台都是基于<strong>Git项目管理</strong>，它们都是由两种方式部署(克隆)到托管平台上，分别是 <code>HTTP</code> 和 <code>SSH</code>方式。那么，它们有什么区别呢？它们的区别在于：<br><code>HTTPS</code> 方式<br>    <strong>优点</strong>是可以直接复制https url，然后到git bash 里用clone命令(或其他命令)。<br>    <strong>缺点</strong>是每次clone(克隆)和push(推送)代码都需要输入账号和密码。<br><code>SHH公钥</code> 方式<br>    <strong>优点</strong>是每次执行clone(克隆)和push(推送)代码默认都不需要输入账号和密码，<br>    <strong>缺点</strong>是需要在本地和托管平台添加 <code>SSH key</code> 。</p>
-<p> 我们可以清楚的知道两种方式的区别(优缺点)，第一种可能简单易懂，但是以后每次执行clone(克隆)和push(推送)代码时都需要输入账号和密码，想想都觉得麻烦，长痛不如短痛，我选择第二种 <code>SSH 公钥</code> 的方式,接下来介绍如何获取 <code>SSH Key</code> 。吐槽一句，如果你不觉得第一种方式麻烦，你可以使用第一种。</p>
-<p><span id="stitle">2.2 如何获取SSH Key</span></p>
-<p><strong>2.2.1</strong> 在任意目录下(如D:\hexo,这是我安装Hexo文件的路径)，鼠标右键点击选中 <code>Git Bash Here</code> 选项，进入Git Bash<br><img src="http://www.wailian.work/images/2018/06/04/hexo2-11.png" alt="hexo2-11.png" border="0" style="margin-left: 0px;"><br><strong>2.2.2</strong>检查你的电脑是否已经生成了 <code>SSH Key</code> ,在Git Bash 中依次输入 <code id="redlog"> cd  ~/.ssh </code> 和<code id="redlog"> dir </code>  命令，看是否有 <code>id_rsa.pub</code> 或 <code>id_dsa.pub</code> 文件存在，如果文件存在说明已经有 <code>SSH Key</code>，你可以直接跳过2.2.3步骤，直接进入2.2.4步骤<br><img src="http://www.wailian.work/images/2018/06/04/hexo2-12.png" alt="hexo2-12.png" border="0" style="margin-left: 0px;"><br><strong>2.2.3</strong>生成 <code>SSH Key</code> 。输入<code id="redlog"> ssh-keygen -t rsa -C “<a href="mailto:1573976969@qq.com" target="_blank" rel="noopener">1573976969@qq.com</a>“ </code>命令,这里 <code>-C</code> 后面写入你的邮箱，用引号引起来<br><strong>2.2.4</strong>查看你的 <code>public key</code>。输入<code id="redlog"> cat ~/.ssh/id_rsa.pub </code>命令,复制 <code>SSH Key</code>把它添加托管平台<br><strong>2.2.5</strong>测试是否成功</p>
-<h2 id="部署到托管平台"><a href="#部署到托管平台" class="headerlink" title="部署到托管平台"></a>部署到托管平台</h2><p><span id="stitle">3.1部署到GitHub</span><br><span id="stitle">3.2部署到coding</span><br><span id="stitle">3.3部署到oschina(码云)</span></p>
+<p> 我们可以清楚的知道两种方式的区别(优缺点)，第一种可能简单易懂，但是以后每次执行clone(克隆)和push(推送)代码时都需要输入账号和密码，想想都觉得麻烦，长痛不如短痛，我选择第二种 <code>SSH 公钥</code> 的方式，接下来介绍如何获取 <code>SSH Key</code> 。吐槽一句，如果你不觉得第一种方式麻烦，你可以使用第一种。</p>
+<p><span id="stitle">2.2 如何获取配置SSH Key</span></p>
+<p><strong>2.2.1</strong> 在任意目录下(如D:\hexo，这是我安装Hexo文件的路径)，鼠标右键点击选中 <code>Git Bash Here</code> 选项，进入Git Bash<br><img src="http://www.wailian.work/images/2018/06/04/hexo2-11.png" alt="hexo2-11.png" border="0" style="margin-left: 0px;"><br><strong>2.2.2</strong>检查你的电脑是否已经生成了 <code>SSH Key</code> ，在Git Bash 中依次输入 <code id="redlog"> cd  ~/.ssh </code> 和<code id="redlog"> dir </code>  命令，看是否有 <code>id_rsa.pub</code> 或 <code>id_dsa.pub</code> 文件存在，如果文件存在说明已经有 <code>SSH Key</code>，你可以直接跳过2.2.3步骤，直接进入2.2.4步骤<br><img src="http://www.wailian.work/images/2018/06/04/hexo2-12.png" alt="hexo2-12.png" border="0" style="margin-left: 0px;"><br><strong>2.2.3</strong>生成 <code>SSH Key</code> 。输入<code id="redlog"> ssh-keygen -t rsa -C  “<a href="mailto:1573976969@qq.com" target="_blank" rel="noopener">1573976969@qq.com</a>“ </code>命令，这里 <code>-C</code> 后面写入你的邮箱，用引号引起来  </p>
+<p><strong>2.2.4</strong>查看你的 <code>public key</code>。输入<code id="redlog"> cat ~/.ssh/id_rsa.pub </code>命令，复制 <code>SSH Key</code>把它添加托管平台  </p>
+<p><strong>2.2.5</strong>测试托管平台添加SSH公钥是否成功，在Git Bash 中输入不同的测试命令，(测试不同托管平台添加SSH公钥是否成功输入的命令也不同)，<font style="color: #f00"><strong>这一步是必须的，不然你部署不到托管平台</strong></font><br><code>Oschina(码云)</code>： <code id="redlog"> ssh -T <a href="mailto:git@gitee.com" target="_blank" rel="noopener">git@gitee.com</a> </code><br><code>Coding</code>： <code id="redlog"> ssh -T <a href="mailto:git@git.coding.net" target="_blank" rel="noopener">git@git.coding.net</a> </code><br><code>GitHub</code>： <code id="redlog"> ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> </code></p>
+<h2 id="部署到托管平台"><a href="#部署到托管平台" class="headerlink" title="部署到托管平台"></a>部署到托管平台</h2><p><span id="stitle">3.1部署到GitHub</span><br>这里需要一个GitHub账号，如果没有的话可以去<a href="https://github.com" target="_blank" rel="noopener">GitHub官网</a>注册。<br><strong>3.1.1</strong>创建一个新的repository,鼠标左点GitHub首页的右上角头像，然后选择 <code>New repository</code> 选项<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-13.png" alt="hexo2-13.png" border="0" style="margin-left: 0px;"><br><strong>3.1.2</strong>填写创建repository的信息,<font style="color: #f00">填写Repository name的时候一定以 <code>Github用户名.github.io</code>创建</font>，如果没有用 <code>fengreen.github.io</code> 而用 <code>hexo.github.io</code> ,再用创建好repository生成的链接去访问会出现 <code>404错误</code> 。直接用 <code>fengreen.github.io</code> 或 <code>hexo.github.io</code> 路径去访问肯定是访问不到的，它部署在 <code>http://fengreen.github.io/hexo.github.io</code> 路径下，为了不必要的麻烦，最好填写Repository name的时候一定以 <code>Github用户名.github.io</code>创建<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-14.png" alt="hexo2-14.png" border="0" style="margin-left: 0px;"><br><strong>3.1.3</strong>在github首页点击头像框，会弹出下拉框，选中 <code>setting</code> 选项点击<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-15.png" alt="hexo2-15.png" border="0" style="margin-left: 0px;"><br><strong>3.1.4</strong>出现以下界面，点击右边导航栏 <code>SSH and GPG keys</code> 选项<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-16.png" alt="hexo2-16.png" border="0" style="margin-left: 0px;"><br><strong>3.1.5</strong>点击New SSH Key<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-17.png" alt="hexo2-17.png" border="0" style="margin-left: 0px;"><br><strong>3.1.6</strong>给SSH公钥取一个名字，title输入框中可以随便写一个名字，把之前复制的SSH公钥粘贴到key输入框中(使用<strong>2.2.4步骤</strong>方法获取SSH Key),然后点击 <code>Add SSH Key</code><br><img src="http://www.wailian.work/images/2018/06/07/hexo2-18.png" alt="hexo2-18.png" border="0" style="margin-left: 0px;"><br><strong>3.1.7</strong>然后弹出确认密码的界面，把github账号密码输入一遍，点击 <code>confirm password</code><br><img src="http://www.wailian.work/images/2018/06/07/hexo2-19.png" alt="hexo2-19.png" border="0" style="margin-left: 0px;"><br>会生成一个黑色的钥匙图标，需要验证钥匙图标才会变绿色<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-20.png" alt="hexo2-20.png" border="0" style="margin-left: 0px;"><br><strong>3.1.8</strong>测试托管平台添加SSH公钥是否成功,输入<code id="redlog"> ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> </code>命令<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-21.png" alt="hexo2-21.png" border="0" style="margin-left: 0px;"><br>测试成功后，黑色的钥匙图标会变成绿色的钥匙图标<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-22.png" alt="hexo2-22.png" border="0" style="margin-left: 0px;"><br><strong>3.1.8</strong>修改Hexo的配置文件，编辑 <code>_config.yml</code> 文件，再文件中 <strong><code>添加</code></strong> 以下配置</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo:</span><br><span class="line">       github: git<span class="meta">@github</span>.com:fengreen/fengreen.github.io.git   </span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p><strong>3.1.8</strong>安装部署工具,在Git Bash 输入<code id="redlog"> npm install hexo-deployer-git –-save </code>命令,就可以执行部署<code id="redlog">hexo d</code>命令，把本地的hexo静态文件(html文件)部署到Github上<br><img src="http://www.wailian.work/images/2018/06/07/hexo2-23.png" alt="hexo2-23.png" border="0" style="margin-left: 0px;"></p>
+<p><span id="stitle">3.2部署到coding</span></p>
+<p><span id="stitle">3.3部署到oschina(码云)</span></p>
 
       
     </div>
